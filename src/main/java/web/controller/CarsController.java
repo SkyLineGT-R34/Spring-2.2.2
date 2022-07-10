@@ -20,7 +20,7 @@ public class CarsController {
         cars.add(new Car("Ferrari", "F-40", 1987));
         cars.add(new Car("Nissan", "Skyline GT-R R34 Z-Tune", 1987));
         cars.add(new Car("Shelby", "Cobra 427 S/C", 1967));
-        if (count != null) {
+        if (count != null && count>=0) {
             for (int i= cars.size()-1; i>=count;i--) {
                 cars.remove(i);
             }
